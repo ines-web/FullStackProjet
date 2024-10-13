@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241013134935"
+  },
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Categorie",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "categorie",
+      "otherEntityRelationshipName": "categorie",
+      "relationshipName": "pidParent",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "no"
+}

@@ -41,6 +41,8 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.categorie.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.mycompany.categorie.repository.UserRepository.USERS_BY_EMAIL_CACHE);
             createCache(cm, com.mycompany.categorie.domain.Authority.class.getName());
+            createCache(cm, com.mycompany.categorie.domain.Categorie.class.getName());
+            createCache(cm, com.mycompany.categorie.domain.Categorie.class.getName() + ".categories");
             // jhipster-needle-ehcache-add-entry
         };
     }
